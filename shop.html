@@ -16,47 +16,73 @@
 
 <body>
   <header>
-    <h1>Pacific Trails Resort</h1>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Pacific Trails Resort</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="yurts.html">Yurts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="activities.html">Activites</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reservations.html">Reservations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="shop.html">Shop</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
   </header>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="yurts.html">Yurts</a></li>
-      <li><a href="activities.html">Activities</a></li>
-      <li><a href="reservations.html">Reservations</a></li>
-      <li><a href="shop.html">Shop</a></li>
-    </ul>
-  </nav>
 
-  <main>
-    <h2>Shop at Pacific Trails</h2>
-    <img src="images/trailguide.jpg" alt="Pacific Trails Hiking Guide">
-    <h3>Pacific Trails Hiking Guide</h3>
-    <p>Guided hikes to the best trails around Pacific Trails Resort. Each hike includes a detailed route, distance,
-      elevation change, and estimated time. 187 pages. Softcover. $19.95</p>
-    <form method="post" action="http://webdevbasics.net/cart.html">
-      <input type="submit" value="Add to Cart">
-    </form>
-    <img src="images/yurtyoga.jpg" alt="Pacific Trails Yurt Yoga">
-    <h3>Yurt Yoga</h3>
-    <p>Enjoy the restorative poses of yurt yoga in the comfort of your own home. Each pose is illustrated with several
-      photographs, an explanation, and a description of the restorative benefits. 206 pages. Softcover. $24.95</p>
-    <form method="post" action="http://webdevbasics.net/cart.html">
-      <input type="submit" value="Add to Cart">
-    </form>
-    <img src="images/yurtcamping.jpg" alt="Yurt Camping" class="leftfloat">
-    <h3>Yurt Camping</h3>
-    <p>The ultimate guide to a relaxing camping vacation in a yurt with children and pets. Once you discover the
-      bliss of camping in a
-      yurt, you will never want to spend your vacation any other way. 75 pages. Softcover. $15.95</p>
-    <form method="post" action="http://webdevbasics.net/cart.html">
-      <input type="submit" value="Add to Cart">
-    </form>
-
+  <main class="flex-shrink-0">
+    <div class="container">
+      <h2>Shop at Pacific Trails</h2>
+      <img src="images/trailguide.jpg" alt="Pacific Trails Hiking Guide">
+      <h3>Pacific Trails Hiking Guide</h3>
+      <p>Guided hikes to the best trails around Pacific Trails Resort. Each hike includes a detailed route, distance,
+        elevation change, and estimated time. 187 pages. Softcover. $19.95</p>
+      <form method="post" action="http://webdevbasics.net/cart.html">
+        <input type="submit" value="Add to Cart">
+      </form>
+      <img src="images/yurtyoga.jpg" alt="Pacific Trails Yurt Yoga">
+      <h3>Yurt Yoga</h3>
+      <p>Enjoy the restorative poses of yurt yoga in the comfort of your own home. Each pose is illustrated with several
+        photographs, an explanation, and a description of the restorative benefits. 206 pages. Softcover. $24.95</p>
+      <form method="post" action="http://webdevbasics.net/cart.html">
+        <input type="submit" value="Add to Cart">
+      </form>
+      <img src="images/yurtcamping.jpg" alt="Yurt Camping" class="leftfloat">
+      <h3>Yurt Camping</h3>
+      <p>The ultimate guide to a relaxing camping vacation in a yurt with children and pets. Once you discover the
+        bliss of camping in a
+        yurt, you will never want to spend your vacation any other way. 75 pages. Softcover. $15.95</p>
+      <form method="post" action="http://webdevbasics.net/cart.html">
+        <input type="submit" value="Add to Cart">
+      </form>
+    </div>
   </main>
-  <footer>
-    Copyright &copy; 2018 Pacific Trails Resort<br>
-    <a href="mailto:yourfirstname@yourlastname.com">yourfirstname@yourlastname.com</a>
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+      <span class="text-muted">Copyright &copy; 2022 Pacific Trails Resort<br></span>
+      <a href="mailto:jmaxwell00724@my.westga.edu">jmaxwell00724@my.westga.edu</a>
+    </div>
   </footer>
 
   <!-- Option 1: Bootstrap Bundle with Popper -->

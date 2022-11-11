@@ -16,33 +16,59 @@
 
 <body>
   <header>
-    <h1>Pacific Trails Resort</h1>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Pacific Trails Resort</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="yurts.html">Yurts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="activities.html">Activites</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reservations.html">Reservations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">Shop</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="yurts.html">Yurts</a></li>
-      <li><a href="activities.html">Activities</a></li>
-      <li><a href="reservations.html">Reservations</a></li>
-      <li><a href="shop.html">Shop</a></li>
-    </ul>
-  </nav>
-
-  <main>
-    <h2>Activities at Pacific Trails</h2>
-    <h3>Hiking</h3>
-    <p>Pacific Trails Resort has 5 miles of hiking trails and is adjacent to a state park.
-      Go it alone or join one of our guided hikes.</p>
-    <h3>Kayaking</h3>
-    <p>Ocean kayaks are available for guest use.</p>
-    <h3>Bird Watching</h3>
-    <p>While anytime is a good time for bird watching at Pacific Trails, we offer guided birdwatching trips at sunrise
-      several times a week.</p>
+  <main class="flex-shrink-0">
+    <div class="container">
+      <h2>Activities at Pacific Trails</h2>
+      <h3>Hiking</h3>
+      <p>Pacific Trails Resort has 5 miles of hiking trails and is adjacent to a state park.
+        Go it alone or join one of our guided hikes.</p>
+      <h3>Kayaking</h3>
+      <p>Ocean kayaks are available for guest use.</p>
+      <h3>Bird Watching</h3>
+      <p>While anytime is a good time for bird watching at Pacific Trails, we offer guided birdwatching trips at sunrise
+        several times a week.</p>
+    </div>
   </main>
-  <footer>
-    Copyright &copy; 2018 Pacific Trails Resort<br>
-    <a href="mailto:yourfirstname@yourlastname.com">yourfirstname@yourlastname.com</a>
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+      <span class="text-muted">Copyright &copy; 2022 Pacific Trails Resort<br></span>
+      <a href="mailto:jmaxwell00724@my.westga.edu">jmaxwell00724@my.westga.edu</a>
+    </div>
   </footer>
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
